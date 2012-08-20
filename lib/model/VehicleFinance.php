@@ -4,6 +4,7 @@ class VehicleFinance extends WaxModel{
 
   public function setup(){
     $this->define("title", 'CharField');
+    $this->define("group_title", 'CharField', array());
 
     /******* Consumer Finance Options *******************/
     $this->define("cash_price", 'CharField', array("group"=>"Finance"));
