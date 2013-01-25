@@ -8,19 +8,19 @@ class VehicleFinance extends WaxModel{
     $this->define("sort", 'CharField', array("editable"=>FALSE));
 
     /******* Consumer Finance Options *******************/
-    $this->define("cash_price", 'CharField', array("group"=>"Finance"));
-    $this->define("deposit", 'CharField', array("label"=>"Deposit / Part Exchange","group"=>"Finance"));
-    $this->define("total_credit", 'CharField', array("group"=>"Finance"));
-    $this->define("purchase_fee", 'CharField', array("group"=>"Finance"));
-    $this->define("credit_facility_fee", 'CharField', array("group"=>"Finance"));
-    $this->define("total_amount_payable", 'CharField', array("group"=>"Finance"));
-    $this->define("initial_payment", 'CharField', array("group"=>"Finance"));
-    $this->define("number_of_monthly_payments", 'CharField', array("group"=>"Finance"));
-    $this->define("monthly_payments", 'CharField', array("group"=>"Finance"));
-    $this->define("optional_final_payment", 'CharField', array("group"=>"Finance"));
-    $this->define("duration_of_agreement", 'CharField', array("group"=>"Finance"));
-    $this->define("representative_apr", 'CharField', array("label"=>"Representative APR","group"=>"Finance"));
-    $this->define("interest_rate", 'CharField', array("label"=>"Interest rate (fixed)","group"=>"Finance"));
+    $this->define("cash_price", 'CharField', array("group"=>"Hire Purchase"));
+    $this->define("deposit", 'CharField', array("label"=>"Deposit / Part Exchange","group"=>"Hire Purchase"));
+    $this->define("total_credit", 'CharField', array("group"=>"Hire Purchase"));
+    $this->define("purchase_fee", 'CharField', array("group"=>"Hire Purchase"));
+    $this->define("credit_facility_fee", 'CharField', array("group"=>"Hire Purchase"));
+    $this->define("total_amount_payable", 'CharField', array("group"=>"Hire Purchase"));
+    $this->define("initial_payment", 'CharField', array("group"=>"Hire Purchase"));
+    $this->define("number_of_monthly_payments", 'CharField', array("group"=>"Hire Purchase"));
+    $this->define("monthly_payments", 'CharField', array("group"=>"Hire Purchase"));
+    $this->define("optional_final_payment", 'CharField', array("group"=>"Hire Purchase"));
+    $this->define("duration_of_agreement", 'CharField', array("group"=>"Hire Purchase"));
+    $this->define("representative_apr", 'CharField', array("label"=>"Representative APR","group"=>"Hire Purchase"));
+    $this->define("interest_rate", 'CharField', array("label"=>"Interest rate (fixed)","group"=>"Hire Purchase"));
     
     /******** Contract Hire Options ********************/
     $this->define("list_price", 'CharField', array("group"=>"Contract Hire"));
