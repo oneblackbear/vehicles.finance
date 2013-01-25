@@ -3,7 +3,7 @@ class VehicleFinance extends WaxModel{
 
 
   public function setup(){
-    $this->define("title", 'CharField');
+    $this->define("title", 'CharField', array("scaffold"=>true));
     $this->define("group_title", 'CharField', array());
     $this->define("sort", 'CharField', array("editable"=>FALSE));
 

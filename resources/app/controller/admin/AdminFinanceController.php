@@ -6,4 +6,3 @@ class AdminFinanceController extends AdminComponent{
   public $dashboard = false;
   public $tree_layout = false;
 }
-?>
