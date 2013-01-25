@@ -5,4 +5,5 @@ class AdminFinanceController extends AdminComponent{
   public $display_name = "Finance";
   public $dashboard = false;
   public $tree_layout = false;
+  public $per_page = 60;
 }
