@@ -45,6 +45,13 @@ class VehicleFinance extends WaxModel{
   public function before_save(){
     if(!$this->cash_price) $this->cash_price = 0;
   }
+  
+  public function humanize($column=false){
+    if($column == "finance_type" ) {
+      return $this->finance_type;
+    }
+    return parent::humanize($column);
+  }
 
 
 }
