@@ -5,7 +5,7 @@ class VehicleFinance extends WaxModel{
   public function setup(){
     $this->define("title", 'CharField', array("scaffold"=>true));
     $this->define("group_title", 'CharField', array("scaffold"=>true));
-    $this->define("finance_type", 'CharField', array("scaffold"=>true, "widget"=>"SelectInput", "choices"=>array("Business","Private")));
+    $this->define("finance_type", 'CharField', array("scaffold"=>true, "widget"=>"SelectInput", "choices"=>array("Business","Private"), "text_choices"=>true));
     $this->define("sort", 'CharField', array("editable"=>FALSE));
 
     /******* Consumer Finance Options *******************/
