@@ -26,6 +26,7 @@ class VehicleFinance extends WaxModel{
     /******** Contract Hire Options ********************/
     $this->define("list_price", 'CharField', array("group"=>"Contract Hire"));
     $this->define("contract_hire_rental", 'CharField', array("group"=>"Contract Hire"));
+    $this->define("maintenance_cost", 'CharField', array("group"=>"Contract Hire"));
     $this->define("contract_hire_rental_inc_maintenance", 'CharField', array("group"=>"Contract Hire"));
     $this->define("term", 'CharField', array("group"=>"Contract Hire"));
     $this->define("payment_plan", 'CharField', array("group"=>"Contract Hire"));
