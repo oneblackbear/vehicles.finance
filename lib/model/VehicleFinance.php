@@ -52,6 +52,9 @@ class VehicleFinance extends WaxModel{
     if($column == "finance_type" ) {
       return $this->finance_type;
     }
+    if($column == "payment_type" ) {
+      return $this->payment_type;
+    }
     return parent::humanize($column);
   }
 
