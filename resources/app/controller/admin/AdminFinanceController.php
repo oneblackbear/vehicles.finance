@@ -8,6 +8,6 @@ class AdminFinanceController extends AdminComponent{
   public $per_page = 60;
   public $filter_fields=array(
   	'text' => array('columns'=>array('title', 'payment_type','finance_type'), 'partial'=>'_filters_text', 'fuzzy'=>true),
-     'derivatives' => array('columns'=>array('derivatives'), 'partial'=>'_filters_select', 'opposite_join_column'=>'accessories'),
+    'derivatives' => array('columns'=>array('derivatives'), 'partial'=>'_filters_select', 'opposite_join_column'=>'vehicle_finance'),
   );
 }
