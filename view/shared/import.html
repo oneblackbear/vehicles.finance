@@ -1,0 +1,27 @@
+<form action="" class="tabs_container form_container <?=Inflections::to_url($controller)?>-<?=$action?> clearfix" method="post" enctype="multipart/form-data" data-model-class="<?=get_class($model)?>" data-model-primval="<?=$model->primval?>" id="upload-form" data-html5-upload="/<?=trim($controller,"/")?>/upload.ajax">
+	<ul class='tabs clearfix'>
+	    <li id="tab_import" class='tab-contents'><a href="#import">Import Finance</a></li>
+	    <?if($import_error):?><li id="tab_error" class='tab-contents'><a href="#error">Report</a></li><?endif?>
+	</ul>
+	<fieldset class='tab-contents clearfix' id="import">
+		<?foreach($form as $field):?>
+			<div class='field field-<?=$field->name?> <?=$model_class?>-<?=$field->name?> clearfix'>
+				<?=$field->render()?>
+			</div>
+		<?endforeach?>
+	</fieldset>
+	<?if($import_error):?>
+		<fieldset class='tab-contents clearfix' id="error">
+			<ul class="messages field">
+			  <?foreach($import_error as $key=>$error):?>
+			    <li class="clearfix <?=key($error)?>"><span class="icon"></span><span class="message">Line <?=$key+1?> <?=reset($error)?></span></li>
+			  <?endforeach?>
+			</ul>
+		</fieldset>
+	<?endif?>
+	<fieldset class='submit'>
+		<div class='field form-submit clearfix'>
+  			<input type="submit" name='live' value='Import' class='submit_field input_field live <?=get_class($model)?>-live'>
+		</div>
+	</fieldset>
+</form>
