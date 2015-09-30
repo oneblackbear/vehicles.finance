@@ -75,7 +75,6 @@ class AdminFinanceController extends AdminComponent{
           "Duration of Agreement"=>"duration_of_agreement",
           "APR"=>"representative_apr",
           "Interest Rate"=>"interest_rate",
-          "Final Payment"=>"optional_final_payment",
         ),
       ),
       "Lease Purchase"=>array(
@@ -89,6 +88,7 @@ class AdminFinanceController extends AdminComponent{
           "Monthly Payments of"=>"monthly_payments",
           "Duration of Agreement"=>"duration_of_agreement",
           "APR"=>"representative_apr",
+          "Final Payment"=>"optional_final_payment",
         ),
         'Business'=>array(
           "Title"=>"title",
