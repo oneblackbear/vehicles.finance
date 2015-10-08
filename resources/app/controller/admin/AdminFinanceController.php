@@ -112,6 +112,7 @@ class AdminFinanceController extends AdminComponent{
           "Maintenance Cost"=>"maintenance_cost",
           "Term"=>"term",
           "Payment Plan"=>"payment_plan",
+          "Deposit"=>"deposit",
         ),
         'Business'=>array(
           "Title"=>"title",
@@ -121,6 +122,7 @@ class AdminFinanceController extends AdminComponent{
           "Maintenance Cost"=>"maintenance_cost",
           "Term"=>"term",
           "Payment Plan"=>"payment_plan",
+          "Deposit"=>"deposit",
         ),
       ),
     );
