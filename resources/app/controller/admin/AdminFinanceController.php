@@ -154,7 +154,7 @@ class AdminFinanceController extends AdminComponent{
         if($mappings = $mapping[$save['payment_type']][$save['finance_type']]){
           foreach($mappings as $name=>$field){
             if($value = $finance[$name]){
-              $model->$field = $value;
+              $model->$field = str_replace(array("£",",","%"),"",utf8_encode($value));
             }else{
               if($this->import_error[$key]["user_errors"]) $this->import_error[$key]["user_errors"] .= "<br>";
               $this->import_error[$key]["user_errors"] .= "Missing field or field empty: ".$name." ";
